@@ -5,7 +5,7 @@ const server=http.createServer(app);
 const fs = require("fs");
 const session = require("express-session");
 const multer = require("multer"); 
-const upload = multer({ dest: 'todo/todo/',dest:'todo/' });
+const upload = multer({ dest: 'todo/todo/'});
 // const todoimg=multer({dest:'todo/'});
 // app.use(exprestic("views"));
 app.use(express.static("public"));
