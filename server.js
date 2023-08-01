@@ -5,7 +5,7 @@ const server=http.createServer(app);
 const fs = require("fs");
 const session = require("express-session");
 const multer = require("multer"); 
-const upload = multer({ dest: 'todo/todo/' });
+const upload = multer({ dest: 'todo/todo/',dest:'todo/' });
 // const todoimg=multer({dest:'todo/'});
 // app.use(exprestic("views"));
 app.use(express.static("public"));
@@ -43,7 +43,7 @@ app.get("/todo-data",(req,res)=>{
 app.get("/",(req,res)=>{
     if (req.session.user===undefined){
       req.session.user="";}
-    res.render("index.ejs",{user:req.session.user.toUpperCase(),flag:req.session.isLoggedin,image:req.session.image});
+    res.render("index.ejs",{user:req.session.user.toUpperCase(),flag:req.session.isLoggedin,image:"/todo/"+req.session.image});
   });
 
 
@@ -94,21 +94,21 @@ app.get("/welcome",(req,res)=>{
     res.redirect("/login");
     return;
   }
-  res.render("index.ejs",{user:req.session.user.toUpperCase(),flag:req.session.isLoggedin,image:req.session.image});
+  res.render("index.ejs",{user:req.session.user.toUpperCase(),flag:req.session.isLoggedin,image:"/todo/"+req.session.image});
 });
 app.get("/about",(req,res)=>{
   if(!req.session.isLoggedin){
     res.redirect("/login");
     return;
   }
-  res.render("about.ejs",{user:req.session.user.toUpperCase(),flag:req.session.isLoggedin,image:req.session.image});
+  res.render("about.ejs",{user:req.session.user.toUpperCase(),flag:req.session.isLoggedin,image:"/todo/"+req.session.image});
 });
 app.get("/contact",(req,res)=>{
   if(!req.session.isLoggedin){
     res.redirect("/login");
     return;
   }
-  res.render("contact.ejs",{user:req.session.user.toUpperCase(),flag:req.session.isLoggedin,image:req.session.image});
+  res.render("contact.ejs",{user:req.session.user.toUpperCase(),flag:req.session.isLoggedin,image:"/todo/"+req.session.image});
 });  
 app.post("/login",(req,res)=>{
   const {username,password}=req.body;
@@ -245,13 +245,13 @@ app.post("/todo",(req,res)=>{
       res.redirect("/login");
       return;
     }
-    console.log(req.body,req.file);
+    // console.log(req.body,req.file);
     const todo={
         text:req.body.text,
         image:req.file.filename,
         completed:false
     }
-    console.log(todo);
+    // console.log(todo);
     saveData("./files.txt",todo,function(err){
         if(err){
             res.status(500).send("error");
