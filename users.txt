@@ -1,0 +1,76 @@
+[
+  {
+    "username": "n",
+    "password": "1",
+    "email": "kqeknlf@gmail.com",
+    "phone": "154668846484"
+  },
+  {
+    "username": "hussain",
+    "email": "hussain109164@gmail.com",
+    "phone": "07652053463",
+    "password": "1"
+  },
+  {
+    "username": "n",
+    "email": "kqeknlf@g.mm",
+    "phone": "154668846484",
+    "password": "1"
+  },
+  {
+    "username": "hussain",
+    "email": "kqeknlf@gmll.mm",
+    "phone": "154668846484",
+    "password": "1"
+  },
+  {
+    "username": "kiki",
+    "email": "kiki@d.c",
+    "phone": "07652053463",
+    "password": "1"
+  },
+  {
+    "username": "kii",
+    "email": "kqeknlf@gmail.com",
+    "phone": "154668846484",
+    "password": "1"
+  },
+  {
+    "username": "piku",
+    "email": "pop@l.c",
+    "phone": "18949638",
+    "password": "1"
+  },
+  {
+    "username": "piku",
+    "email": "hhhhhhhh@gmail.com",
+    "phone": "525225262415",
+    "password": "1"
+  },
+  {
+    "username": "hussi",
+    "email": "hussi@23.c",
+    "phone": "1679869",
+    "password": "1"
+  },
+  {
+    "username": "heelo",
+    "email": "helll@22.c",
+    "phone": "6546846516",
+    "password": "1"
+  },
+  {
+    "username": "HUBB",
+    "password": "1",
+    "email": "hubb@1.c",
+    "phone": "7898456512",
+    "image": "3214b7334e6271d1f70b48de838d07e2"
+  },
+  {
+    "username": "its.bacardi_",
+    "password": "1",
+    "email": "bcrd@j.c",
+    "phone": "525225262415",
+    "image": "f6640f5d4c14dba9824dd6ea0485d58d"
+  }
+]
